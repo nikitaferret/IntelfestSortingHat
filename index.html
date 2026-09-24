@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IntelfestSortingHat · пульт</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body class="op-page">
+    <div class="op">
+      <header class="top">
+        <div class="brand">
+          <img class="logo-mark" src="logo.svg" width="22" height="22" alt="" />
+          <span class="brand-text">INTELFESTSORTING<span class="soft">HAT</span></span>
+        </div>
+        <p class="status" id="status"></p>
+        <button class="btn" id="openDisplay" type="button">Экран зала</button>
+      </header>
+      <p class="toast" id="toast"></p>
+      <div class="work">
+        <section class="grid-card" id="grid"></section>
+        <aside class="side">
+          <div>
+            <div class="kicker">Выбрано</div>
+            <div class="count" id="count">0</div>
+          </div>
+          <div class="inline">
+            <label>В команде <input class="num" id="teamSize" type="number" min="1" max="20" value="4" /></label>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn-primary" id="deal" type="button">Распределить</button>
+            <button class="btn" id="addRow" type="button">+ 10</button>
+            <button class="btn" id="resetRows" type="button">Сбросить ряды</button>
+          </div>
+          <div>
+            <div class="kicker">Всегда вместе</div>
+            <div class="inline" style="margin-top:6px">
+              <input class="num" id="pairA" type="number" min="1" placeholder="№" />
+              <span>и</span>
+              <input class="num" id="pairB" type="number" min="1" placeholder="№" />
+              <button class="btn" id="pairAdd" type="button">Связать</button>
+            </div>
+            <div class="pair-list" id="pairs" style="margin-top:8px"></div>
+          </div>
+          <div id="teamsBlock" hidden>
+            <div class="kicker">Команды — правка</div>
+            <div class="team-edit" id="teams"></div>
+            <button class="btn btn-primary" id="spreadLeft" type="button" hidden style="margin-top:8px">Распределить остаток</button>
+            <button class="btn" id="addTeam" type="button" style="margin-top:8px">Добавить команду</button>
+            <button class="btn" id="resetTeams" type="button" style="margin-top:8px">Сбросить команды</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script type="module" src="js/operator.js"></script>
+  </body>
+</html>

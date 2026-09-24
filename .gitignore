@@ -1,0 +1,20 @@
+# Портативный runtime Python (22 МБ бинарников).
+# Не хранится в репозитории — восстанавливается скриптом scripts/get-runtime.ps1
+runtime/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Мусор Windows
+desktop.ini
+Thumbs.db
+*.lnk
+
+# macOS
+.DS_Store
+
+# Логи и временное
+*.log
+tmp/
