@@ -39,8 +39,9 @@ python scripts/smoke.py
 ## Быстрый старт
 
 **Портативно (без установки Python).** Скопировать папку целиком, включая
-`runtime\python\`, и запустить `IntelfestSortingHat.bat`. Откроется пульт оператора; консольное
-окно нужно держать открытым — его закрытие останавливает сервер.
+`runtime\python\`, и дважды щёлкнуть `!ЗАПУСК.vbs`. Откроется пульт оператора;
+окно консоли скрыто. Запасной запуск — `IntelfestSortingHat.bat` (консоль видна; её
+закрытие останавливает сервер).
 
 **Из исходников.** Нужен Python 3.10+ (проверено на 3.12):
 
@@ -77,6 +78,7 @@ powershell -ExecutionPolicy Bypass -File scripts\get-runtime.ps1
 
 ```
 IntelfestSortingHat/
+  !ЗАПУСК.vbs              запуск без окна консоли
   IntelfestSortingHat.bat  запуск (портативно)
   serve.py                 локальный HTTP-сервер, только stdlib
   index.html               пульт оператора
